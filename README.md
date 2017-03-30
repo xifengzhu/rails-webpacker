@@ -1,24 +1,42 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a rails demo project for how to use [Rails Webpacker](https://github.com/rails/webpacker) to implement [todomvc (react version)]
 
-Things you may want to cover:
 
-* Ruby version
+## How to play locally
 
-* System dependencies
+### 1. get codes
+```
+git clone git@github.com:xifengzhu/rails-webpacker.git
+cd rails-webpacker
+```
 
-* Configuration
+### 2. use bundler to install ruby gems
 
-* Database creation
+```
+bundle install
+```
 
-* Database initialization
+### 3. use yarn to install npm packages
 
-* How to run the test suite
+```
+yarn install
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### 4. start web server
 
-* Deployment instructions
+```
+# start rails server in a terminal
+rails s
 
-* ...
+# start webpack watcher in another terminal
+./bin/webpack-dev-server
+```
+
+### 5. open browser to play with "http://localhost:3000"
+
+---
+
+## Tips
+
+react codes saved in `app/javascript/todomvc/`.
