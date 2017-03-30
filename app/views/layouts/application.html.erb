@@ -9,6 +9,9 @@
   </head>
 
   <body>
+    <div id="root" class="todoapp"></div>
     <%= yield %>
+    <!-- 放在头部会引发 Invariant Violation: _registerComponent(...): Target container is not a DOM element. 意思就是找不到dom节点 -->
+    <%= javascript_pack_tag 'application' %>
   </body>
 </html>
